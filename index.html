@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>Hello World!</title>
+</head>
+
+<body>
+  <h1>Version: 1.0.0</h1>
+  <!-- Quick start: window.addEventListener('DOMContentLoaded', () => {...} -->
+  <ul>
+    <li>Node.js: <span id="node-version"></span></li>
+    <li>Chromium: <span id="chrome-version"></span></li>
+    <li>Electron: <span id="electron-version"></span></li>
+  </ul>
+  <!-- Tutorial: contextBridge.exposeInMainWorld -->
+  <ul id="info"></ul>
+  
+  <script src="./renderer.js"></script>
+</body>
+
+</html>
